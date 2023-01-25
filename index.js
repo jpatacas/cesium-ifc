@@ -48,12 +48,9 @@ async function getJSONProperties() {
   try {
     const rawProperties = await fetch("./model_properties/properties.json");
     const properties = await rawProperties.json();
-    // console.log(properties);
 
     for (let elem in properties) {
       if (properties[elem].type === "IFCBUILDING") {
-        // console.log(properties[elem]);
-        // console.log(Object.keys(properties[elem]).length);
 
         htmlElem = createDescription(
           Object.keys(properties[elem]).length,
