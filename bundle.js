@@ -1,6 +1,6 @@
 // Grant CesiumJS access to your ion assets
 Cesium.Ion.defaultAccessToken =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhNjkzMzFhZC03ZjgwLTQ2NmItODU0ZS0xZGRmN2ViNzQ0ZTUiLCJpZCI6NTg1NjAsImlhdCI6MTY3NDU2MzU5Nn0.1fIBYuxgsizyyPiOMnE9uUSyqGSXTuC9rd93TamHJdk";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzYjZmOTRiZC1jNDVmLTQzNzYtYWEzNi1kZDZiNjZkZWQwNzUiLCJpZCI6NTg1NjAsImlhdCI6MTY3NzA4MzE2OH0.IAwpY1dNM7NuoA4jRZKHoKUckg2yxEJQMFlBwl_Ra4E";
 
 // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
 const viewer = new Cesium.Viewer("cesiumContainer", {
@@ -45,7 +45,7 @@ getJSONProperties();
 
 async function getJSONProperties() {
   try {
-    const rawProperties = await fetch("./model_properties/properties.json");
+    const rawProperties = await fetch("./model_properties/properties.json"); //using model 05.ifc from the IFC.js IFC files
     const properties = await rawProperties.json();
 
     for (let elem in properties) {
