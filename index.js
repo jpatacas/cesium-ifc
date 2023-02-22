@@ -15,8 +15,8 @@ const buildingTileset = viewer.scene.primitives.add(
 let htmlElem;
 
 // define building position and orientation
-const position = Cesium.Cartesian3.fromDegrees(-2.261282, 53.398754, 88);
-const heading = Cesium.Math.toRadians(25.0);
+const position = Cesium.Cartesian3.fromDegrees(-2.24589, 53.47159  , 85);
+const heading = Cesium.Math.toRadians(62.0);
 const pitch = Cesium.Math.toRadians(0.0);
 const roll = Cesium.Math.toRadians(0.0);
 const orientation = Cesium.Transforms.headingPitchRollQuaternion(
